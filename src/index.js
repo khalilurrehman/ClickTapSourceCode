@@ -1,6 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { Route, Link, BrowserRouter as Router } from "react-router-dom";
+import {
+  Route,
+  Link,
+  HashRouter,
+  BrowserRouter as Router
+} from "react-router-dom";
 import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
@@ -8,12 +13,12 @@ import Articles from "./components/Articles";
 import Mostviewed from "./components/Mostviewed";
 
 const routing = (
-  <Router>
+  <HashRouter basename="/">
     <div>
       <Route exact path="/" component={Articles} />
       <Route path="/detail/:id" component={Mostviewed} />
     </div>
-  </Router>
+  </HashRouter>
 );
 ReactDOM.render(routing, document.getElementById("root"));
 
