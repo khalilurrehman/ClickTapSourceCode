@@ -1,5 +1,22 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## How to install (instructions by khalil Ur Rehman)
+
+Download the project files.
+Get in the project directoty where Package.json is placed.
+
+Run command
+### `npm install`
+
+after the node files are installed run command
+
+### `npm start`
+
+this will run the app in development mode. <br>
+Open [http://localhost:3000](http://localhost:3000) to view it in browser.
+
+
+
 ## Available Scripts
 
 In the project directory, you can run:
